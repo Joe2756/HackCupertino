@@ -7,8 +7,7 @@
     
     <div id="head"><center><h1>ARTHUR IS BALD</h1></center></div>
     
-    <form action = "javascript:alert('arthur is bald'); var tag = document.createElement('p'); var bald = document.createTextNode('arthur is bald(lol u thought)'); tag.appendChild(bald);var element = document.getElementById('new');
-   element.appendChild(tag);"> 
+    <form action = "run()"> 
       <p>enter text here for it to appear on screen</p>
       <input type="text" id="lname" name="lname"><br><br>
       <input type="submit" value="Submit">
@@ -16,5 +15,15 @@
     <div id="new">
       
     </div>
+    <script>
+      function run(){
+        javascript:alert('arthur is bald'); 
+        var tag = document.createElement('p'); 
+        var bald = document.createTextNode('arthur is bald(lol u thought)'); 
+        tag.appendChild(bald);
+        var element = document.getElementById('new');
+        element.appendChild(tag);
+      }
+    </script>
   </body>
 </html>
